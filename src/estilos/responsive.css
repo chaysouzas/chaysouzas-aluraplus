@@ -1,0 +1,116 @@
+@media screen and (max-width: 1024px) {
+    .container {
+        grid-template-columns: 100%; /* Torna os elementos empilhados em telas menores */
+        text-align: center;
+    }
+
+    .container__caixa {
+        margin: 0 3em;
+    }
+
+    .secundario {
+        margin: 0 5em;
+    }
+
+    .descricao__titulo {
+        font-size: 36px; /* Reduz o tamanho do título */
+    }
+
+    .dispositivos__titulo {
+        font-size: 36px;
+    }
+
+    .lista__item {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .principal {
+        background-size: contain; /* Em telas menores, a imagem será totalmente visível sem cortes */
+        background-position: top; /* Ajusta a posição para manter o foco no topo */
+        background-attachment: scroll; /* Remove o efeito fixo para melhor adaptação */
+    }
+
+    .container__titulo {
+        font-size: 24px;
+        width: auto;
+        padding: 0 1em;
+    }
+
+    .container__caixa {
+        margin: 0 2em;
+    }
+
+    .container__botao, .botao_secundario {
+        padding: 0.8em;
+        font-size: 14px;
+    }
+
+    .container__imagem {
+        width: 80%;
+    }
+
+    .secundario {
+        margin: 0 2em;
+    }
+
+    .descricao__titulo {
+        font-size: 28px;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column; /* Deixa os itens em coluna */
+        align-items: center;
+    }
+
+    .lista__item {
+        font-size: 20px;
+        margin-bottom: 1em;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .rodape {
+        margin: 3em 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container__titulo {
+        font-size: 20px;
+    }
+
+    .container__caixa {
+        margin: 0 1em;
+    }
+
+    .container__imagem {
+        width: 90%;
+    }
+
+    .container__botao, .botao_secundario {
+        width: 100%; /* Faz os botões ocuparem toda a largura disponível */
+        font-size: 12px;
+    }
+
+    .descricao__titulo {
+        font-size: 24px;
+    }
+
+    .dispositivos__titulo {
+        font-size: 28px;
+    }
+
+    .lista__item {
+        font-size: 18px;
+    }
+
+    .rodape__texto {
+        font-size: 12px;
+    }
+}
